@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.0.1",
   "description": "A Quasar Project",
-  "productName": "Quasar App",
+  "productName": "Fabrizio La Rosa",
   "author": "Fabrizio La Rosa <fbr.larosa@gmail.com>",
   "private": true,
   "scripts": {
@@ -13,8 +13,9 @@
     "deploy": "gh-pages -d dist/spa"
   },
   "dependencies": {
-    "@quasar/extras": "^1.16.4",
+    "@quasar/extras": "^1.16.11",
     "quasar": "^2.8.0",
+    "three": "^0.165.0",
     "vue": "^3.4.18",
     "vue-router": "^4.0.12"
   },
