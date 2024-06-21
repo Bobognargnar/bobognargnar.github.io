@@ -1,17 +1,21 @@
 <template>
   <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
-    >
+    <q-card class="my-card">
+      <q-card-section>
+        {{ lorem }}
+      </q-card-section>
+    </q-card>
   </q-page>
 </template>
 
 <script>
-import { defineComponent } from 'vue'
 
-export default defineComponent({
-  name: 'IndexPage'
-})
+export default {
+  name: 'IndexPage',
+  setup () {
+    return {
+      lorem: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+    }
+  }
+}
 </script>
