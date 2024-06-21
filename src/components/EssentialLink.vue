@@ -2,7 +2,7 @@
   <q-item
     clickable
     tag="a"
-    target="_blank"
+    :target="target"
     :href="routeName"
   >
     <q-item-section
@@ -20,9 +20,8 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue'
 
-export default defineComponent({
+export default {
   name: 'EssentialLink',
   props: {
     title: {
@@ -35,16 +34,19 @@ export default defineComponent({
       default: ''
     },
 
-    link: {
+    target: {
       type: String,
-      default: '#'
+      default: '_self'
     },
 
     icon: {
       type: String,
       default: ''
     },
-    routeName: String
+    routeName: {
+      type: String,
+      default: ''
+    }
   }
-})
+}
 </script>

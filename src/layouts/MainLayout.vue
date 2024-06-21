@@ -51,21 +51,23 @@ import EssentialLink from 'components/EssentialLink.vue'
 
 const linksList = [
   {
-    title: 'Index',
-    caption: 'a page',
-    icon: 'code',
+    title: 'Home',
+    caption: '',
+    icon: 'home',
     routeName: 'home'
   },
   {
     title: 'Github',
     caption: 'github.com/bobognargnar',
     icon: 'fa-brands fa-github',
+    target: '_blank',
     routeName: 'https://github.com/Bobognargnar'
   },
   {
     title: 'Linkedin',
     caption: 'fabrizio-la-rosa-a369839',
     icon: 'fab fa-linkedin',
+    target: '_blank',
     routeName: 'https://www.linkedin.com/in/fabrizio-la-rosa-a369839/'
   },
   {
